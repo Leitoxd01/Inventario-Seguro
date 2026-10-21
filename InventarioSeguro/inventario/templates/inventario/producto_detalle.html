@@ -1,0 +1,4 @@
+{% extends 'inventario/base.html' %}
+{% block contenido %}
+<div class="card shadow-sm"><div class="card-body"><h1>{{ producto.nombre }}</h1><p>{{ producto.descripcion|default:'Sin descripción' }}</p><dl><dt>Categoría</dt><dd>{{ producto.get_categoria_display }}</dd><dt>Precio</dt><dd>${{ producto.precio }}</dd><dt>Cantidad</dt><dd>{{ producto.cantidad }}</dd><dt>Registrado</dt><dd>{{ producto.fecha_registro }}</dd></dl><a class="btn btn-secondary" href="{% url 'inventario:lista' %}">Volver</a> <a class="btn btn-primary" href="{% url 'inventario:editar' producto.pk %}">Editar</a></div></div>
+{% endblock %}

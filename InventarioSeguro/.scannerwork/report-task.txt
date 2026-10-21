@@ -1,0 +1,6 @@
+projectKey=Inventario-Seguro
+serverUrl=http://localhost:9000
+serverVersion=26.10.0.133078
+dashboardUrl=http://localhost:9000/dashboard?id=Inventario-Seguro
+ceTaskId=4ca21000-a535-4e11-9337-3c73d11ecb80
+ceTaskUrl=http://localhost:9000/api/ce/task?id=4ca21000-a535-4e11-9337-3c73d11ecb80

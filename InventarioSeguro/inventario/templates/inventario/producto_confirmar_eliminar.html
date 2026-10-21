@@ -1,0 +1,4 @@
+{% extends 'inventario/base.html' %}
+{% block contenido %}
+<div class="card shadow-sm"><div class="card-body"><h1>Eliminar producto</h1><p>¿Seguro que deseas eliminar <strong>{{ producto.nombre }}</strong>?</p><form method="post">{% csrf_token %}<button class="btn btn-danger" type="submit">Sí, eliminar</button> <a class="btn btn-secondary" href="{% url 'inventario:lista' %}">Cancelar</a></form></div></div>
+{% endblock %}
